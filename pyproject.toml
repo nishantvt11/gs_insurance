@@ -1,0 +1,24 @@
+[project]
+name = "gs-insurance"
+version = "0.1.0"
+description = "GS Insurance data model"
+authors = [
+    {name = "nishantvt11",email = "nishant.tendulkar@hellofresh.com"}
+]
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "duckdb (>=1.2.2,<2.0.0)",
+    "dbt-duckdb (>=1.9.2,<2.0.0)"
+]
+
+[tool.poetry]
+packages = [{include = "gs_insurance", from = "src"}]
+
+
+[tool.poetry.group.dev.dependencies]
+sqlfluff = "^3.4.0"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"

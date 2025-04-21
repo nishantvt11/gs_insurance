@@ -1,0 +1,47 @@
+version: 2
+
+models:
+  - name: premium_transactions_raw_ss
+    description: '{{ doc("premium_transactions_raw_ss") }}'
+    columns:
+      - name: transaction_id
+        description: Unique identifier for each transaction.
+        data_type: integer
+        tests:
+          - not_null
+          - unique
+      - name: created_at
+        description: The timestamp of transaction creation.
+        data_type: string
+        tests:
+          - not_null
+      - name: premium_amount
+        description: The amount paid for the transaction
+        data_type: float
+        tests:
+          - not_null
+      - name: premium_currency
+        description: The currency in which amount is paid
+        data_type: string
+        tests:
+          - not_null
+      - name: charged_party
+        description: The party/customer which pays the premium
+        data_type: string
+        tests:
+          - not_null
+      - name: status
+        description: The status of the transaction
+        data_type: string
+        tests:
+          - not_null
+      - name: month
+        description: The year month combination in the transaction is completed. Example - 2024-07
+        data_type: string
+        tests:
+          - not_null
+      - name: load_date
+        description: The date at which data is ingested
+        data_type: date
+        tests:
+          - not_null

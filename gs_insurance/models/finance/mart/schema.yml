@@ -1,0 +1,21 @@
+version: 2
+
+models:
+  - name: processed_transactions_mart_ss
+    description: '{{ doc("processed_transactions_mart_ss") }}'
+    columns:
+      - name: party
+        description: The party/customer which pays the premium
+        data_type: string
+        tests:
+          - not_null
+      - name: month
+        description: The year month combination in the transaction is completed. Example - 2024-Jul
+        data_type: string
+        tests:
+          - not_null
+      - name: premium_amount
+        description: The total monthly amount paid by the party, rounded to two decimal places.
+        data_type: float
+        tests:
+          - not_null
