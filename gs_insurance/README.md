@@ -1,15 +1,26 @@
 Welcome to your new dbt project!
 
-### Using the starter project
+# GS Insurance Data Model
 
-Try running the following commands:
-- dbt run
-- dbt test
+## Project Setup
+Once the poetry shell is triggered, all the required packages would be already installed. Just follow below commands
 
+### 1. Compile the Project
+```bash
+dbt compile
+```
 
-### Resources:
-- Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
-- Check out [Discourse](https://discourse.getdbt.com/) for commonly asked questions and answers
-- Join the [chat](https://community.getdbt.com/) on Slack for live discussions and support
-- Find [dbt events](https://events.getdbt.com) near you
-- Check out [the blog](https://blog.getdbt.com/) for the latest news on dbt's development and best practices
+### 2. Generate Documentation
+```bash
+dbt docs generate
+```
+
+### 3. Serve documentation locally
+
+```bash
+dbt docs serve
+```
+
+### 3. Access documentation locally
+
+Navigate to http://localhost:8000 
