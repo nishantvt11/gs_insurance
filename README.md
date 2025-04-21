@@ -19,7 +19,7 @@ pip install poetry
 
 ```bash
 git clone https://github.com/nishantvt11/gs_insurance.git
-cd your-repo-name
+cd gs_insurance
 ```
 
 ### 2.Install dependencies:
