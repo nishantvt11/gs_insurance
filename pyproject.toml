@@ -3,7 +3,7 @@ name = "gs-insurance"
 version = "0.1.0"
 description = "GS Insurance data model"
 authors = [
-    {name = "nishantvt11",email = "nishant.tendulkar@hellofresh.com"}
+    {name = "",email = ""}
 ]
 readme = "README.md"
 requires-python = ">=3.11"
